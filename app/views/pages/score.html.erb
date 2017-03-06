@@ -1,22 +1,22 @@
 <h1>Pages#score</h1>
 
-
+<%= @grid %>
 <h2>Now your results</h2>
   <ul>
     <li>Your word:
-      <%= @guess%>
+      <%= @guess %>
     </li>
     <li>Time taken to answer:
-      <%= @result%>
+      <%= @result[:time] %>
     </li>
     <li>Translation:
-      <%= @guess_translated%>
+      <%= @result[:translation] %>
     </li>
     <li>Your score:
-      <%= @results%>
+      <%= @result[:score] %>
     </li>
     <li>Message:
-      <%= %>
+      <%= @result[:message] %>
     </li>
   </ul>
 

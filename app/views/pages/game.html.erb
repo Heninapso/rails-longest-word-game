@@ -7,6 +7,9 @@
 <form action="/score" method="get">
   <label for="input">What's your best shot?</label>
   <input type="text" id="input" name="guess" placeholder="Type your longest word">
+  <input type="hidden" name="grid" value="<%= @grid.join("") %>">
+  <input type="hidden" name=time value="<%= Time.now %>">
+
   <input type="submit" value="Let's try!">
 </form>
 
